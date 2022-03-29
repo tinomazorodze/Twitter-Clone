@@ -1,0 +1,60 @@
+/* Content Section Styles */
+
+main{
+    padding: 23px;
+}
+
+.tweet-card{
+    display: flex;
+}
+
+.tweet-card .profile-image{
+    height: 48px;
+    width: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    margin-right: 10px;
+}
+
+.tweet-card .cta{
+    width: 100%;
+}
+
+.tweet-input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tweet-input input{
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.tweet-input input::placeholder{
+    font-size: 20px;
+}
+
+.tweet-cta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweet-options{
+    display: flex;
+}
+
+.tweet-options li{
+    margin-right: 1rem;
+    color: var(--twitter);
+}
+
+.tweet-cta button{
+    background: var(--twitter);
+    color: #fff;
+    height: 35px;
+    width: 90px;
+    border-radius: 17px;
+    font-weight: 600;
+}

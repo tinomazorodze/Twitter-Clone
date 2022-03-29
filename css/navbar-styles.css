@@ -1,0 +1,117 @@
+/* NavBar Styles */
+
+#nav-bar{
+    padding: 5px 10px 5px 54px;
+}
+
+.nav-bar-wrapper{
+    position: relative;
+    height: 100%;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.logo a{
+    color: var(--twitter);
+    font-size: 1.7rem;
+}
+
+.nav-links li{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .icon{
+    font-size: 1.375rem;
+    height: 50px;
+    width: 40px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-links .icon[data-text]::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 5px;
+    height: 18px;
+    width: 27px;
+    background-color: var(--twitter);
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.nav-links .text{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.nav-links .active .text{
+    font-weight: 600;
+}
+
+.nav-cta button{
+    height: 50px;
+    width: 100%;
+    background: var(--twitter);
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-left{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar .profile{
+    position: absolute;
+    bottom: 15px;
+}
+
+.profile-image{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.p-image-wrapper{
+    background: url('../assets/profile.png') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.profile-detail .name{
+    font-weight: 600;
+}
+
+.profile-detail .username{
+    color: #5d6b75;
+    font-weight: 300;
+}
+
+.profile-cta{
+    margin-left: 40px;
+}

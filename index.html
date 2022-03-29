@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(10) Twitter Clone - OG Creators</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Icons -->
+    <script defer src="./lib/all.min.js"></script>
+</head>
+<body>
+    <!-- Togglers -->
+    <input type="checkbox" id="theme-toggler" class="light-mode">
+    <div class="theme-toggler">
+        <label for="theme-toggler" class="switch" title="light theme | dark theme">
+            <span class="theme-toggler-slider"></span>
+        </label>
+    </div>
+    <div class="body-wrapper">
+        <!-- Page Sections -->
+        <section id="header">
+            <header>
+                <div class="content-header text">
+                    <span>Home</span>
+                    <span><i class="fa-light fa-stars"></i></span>
+                </div>
+                <div class="sidebar-header flex-middle-center">
+                    <div class="search-box">
+                        <div class="icon flex-middle-center">
+                            <i class="fa-thin fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" placeholder="Search Twitter">
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section id="nav-bar">
+            <div class="nav-bar-wrapper">
+                <div class="logo flex-middle-center">
+                    <a href="./index.html">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li class="active">
+                            <div class="icon"><i class="fa-solid fa-home"></i></div>
+                            <span class="text">Home</span>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-regular fa-hashtag"></i></div>
+                            <span class="text">Explore</span>
+                        </li>
+                        <li>
+                            <div class="icon" data-text="10"><i class="fa-regular fa-bell"></i></div>
+                            <span class="text">Notifications</span>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                            <span class="text">Messages</span>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-regular fa-bookmark"></i></div>
+                            <span class="text">Bookmarks</span>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-regular fa-file-lines"></i></div>
+                            <span class="text">Lists</span>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-regular fa-user"></i></div>
+                            <span class="text">Profile</span>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-regular fa-ellipsis-stroke"></i></div>
+                            <span class="text">More</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-cta">
+                    <button>Tweet</button>
+                </div>
+                <div class="profile">
+                    <div class="col-left">
+                        <div class="profile-image">
+                            <div class="p-image-wrapper"></div>
+                        </div>
+                        <div class="profile-detail">
+                            <span class="name text">OGC</span>
+                            <span class="username">@og_creators</span>
+                        </div>
+                    </div>
+                    <div class="profile-cta text">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div class="nav-bar-wrapper">
+        </section>
+        <section id="content">
+            <main>
+                <div class="tweet-card">
+                    <div class="profile-image">
+                        <div class="p-image-wrapper"></div>
+                    </div>
+                    <div class="cta">
+                        <div class="tweet-input">
+                            <input type="text" placeholder="What's Happening?">
+                        </div>
+                        <div class="tweet-cta">
+                            <ul class="tweet-options">
+                                <li><i class="fa-light fa-image"></i></li>
+                                <li><i class="fa-light fa-gif"></i></li>
+                                <li><i class="fa-light fa-chart-bar"></i></li>
+                                <li><i class="fa-light fa-face-smile"></i></li>
+                                <li><i class="fa-light fa-calendar-clock"></i></li>
+                                <li><i class="fa-light fa-location-dot"></i></li>
+                            </ul>
+                            <button class="btn-disabled">Tweet</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section id="side-bar" class="text">
+            <aside>
+                <span>Who To Follow</span>
+                <div class="profile">
+                    <div class="col-left">
+                        <div class="profile-image">
+                            <div class="p-image-wrapper"></div>
+                        </div>
+                        <div class="profile-detail">
+                            <span class="name text">OGC</span>
+                            <span class="username">@og_creators</span>
+                        </div>
+                    </div>
+                    <div class="profile-cta">
+                        <button class="text-alt">Follow</button>
+                    </div>
+                </div>
+            </aside>
+            <aside>
+                <div class="heading">
+                    <span>Trends for you</span>
+                    <div class="icon text">
+                        <i class="fa-light fa-gear"></i>
+                    </div>
+                </div>
+                <ul class="trends">
+                    <li class="trend-card">
+                        <div class="trend">
+                            <small>Web Dev • Trending</small>
+                            <strong class="text">#Glassmorephism</strong>
+                            <small>26.3K</small>
+                        </div>
+                        <div class="trend-cta">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </li>
+                    <li class="trend-card">
+                        <div class="trend">
+                            <small>Web Dev • Trending</small>
+                            <strong class="text">JavaScript</strong>
+                            <small>1.3B</small>
+                        </div>
+                        <div class="trend-cta">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </li>
+                    <li class="trend-card">
+                        <div class="trend">
+                            <small>Web Dev • Trending</small>
+                            <strong class="text">NextJS</strong>
+                            <small>34.5M</small>
+                        </div>
+                        <div class="trend-cta">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </div>
+
+</body>
+</html>

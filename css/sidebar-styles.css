@@ -1,0 +1,55 @@
+#side-bar aside{
+    margin: 23px 30px;
+    padding: 20px;
+    background: #EFF3F4;
+    transition: background .8s;
+    border-radius: 20px;
+}
+
+aside > span,
+aside > .heading span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+aside .profile-image{
+    height: 48px;
+    width: 48px;
+    min-height: 48px;
+    min-width: 48px;
+}
+
+aside .profile{
+    margin-top: 20px;
+}
+
+.profile-cta button{
+    height: 32px;
+    width: 78px;
+    background: var(--font-color-dark);
+    transition: background .8s;
+    border-radius: 16px;
+    font-weight: 700;    
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.trend-card{
+    display: flex;
+    justify-content: space-between;
+    color: #6E767D;
+    margin-bottom: 20px;
+}
+
+.trend{
+    display: flex;
+    flex-direction: column;
+}
+
+.trend strong{
+    font-weight: 500;
+}

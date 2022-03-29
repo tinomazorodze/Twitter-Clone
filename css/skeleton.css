@@ -1,0 +1,132 @@
+/* import the Poppins Google font using the link below or as an alternative install the Poppins font from `/fonts` directory, this is usefull for offline use on your device */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+/* Basic Reset */
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-color-light: #fff;
+    --font-color-dark: #000;
+    --col-main: #1d9bf0;
+    --bg-wrapper-dark: rgba(0, 0, 0, .5);
+    --bg-wrapper-light: rgba(255, 255, 255, .9);
+
+
+    /* Social Bramds Colors */
+    --twitter: #00ACEE;
+    --facebook: #395498;
+    --linkedin: #0E76A8;
+    --youtube: #ff0000;
+    --github: #000;
+    --instagram: linear-gradient(var(--purple), var(--pink));
+
+    /* Typography */
+    --font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+}
+
+html{
+    font-family: var(--font);
+    font-size: var(--normal-font-size);
+    color: var(--font-color);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: scale 1s;
+}
+
+button:active{
+    transform: scale(.95);
+}
+
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* Page Layout */
+
+.body-wrapper{
+    display: grid;
+    grid-template-rows: 50px calc(100vh - 50px);
+    grid-template-columns: 300px 1fr 450px;
+    grid-template-areas:    "NavBar Header Header"
+                            "NavBar Content SideBar";
+    background: #E9EFF3;
+    transition: background .8s;
+}
+
+section#header{
+    grid-area: Header;
+    background: var(--bg-wrapper-light);
+    transition: background .8s;
+}
+
+section#nav-bar{
+    grid-area: NavBar;
+    background: var(--bg-wrapper-light);
+    transition: background .8s;
+}
+
+section#content{
+    grid-area: Content;
+    background: var(--font-color-light);
+    transition: background .8s;
+}
+
+section#side-bar{
+    grid-area: SideBar;
+    background: var(--bg-wrapper-light);
+    transition: background .8s;
+}
+
+/* Utilities */
+
+.flex-middle-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon, .text{
+    color: var(--font-color-dark);
+    transition: color .8s;
+}
+
+.text-alt{
+    color: var(--font-color-light);
+    transition: color .8s;
+}
