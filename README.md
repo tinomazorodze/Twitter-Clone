@@ -1,4 +1,4 @@
-[<img src="https://github.com/tinomazorodze/tinomazorodze/blob/main/images/twitter-clone-screenshot-by-tech-tinoe.png" height="400px" width="694px" style="margin: 0 auto"/>][banner]
+[<img src="https://github.com/tech-tinoe/tech-tinoe/blob/main/images/twitter-clone-screenshot-by-tech-tinoe.png" height="400px" width="694px" style="margin: 0 auto"/>][banner]
 
 # An HTML and CSS only Youtube Clone
 
